@@ -1,0 +1,22 @@
+{
+  "name": "proptypes-to-flow",
+  "version": "0.0.0",
+  "description": "convert proptypes to flow",
+  "bin": "bin/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micnews/proptypes-to-flow.git"
+  },
+  "author": "mic.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micnews/proptypes-to-flow/issues"
+  },
+  "homepage": "https://github.com/micnews/proptypes-to-flow#readme",
+  "dependencies": {
+    "glob": "^7.1.1"
+  }
+}
