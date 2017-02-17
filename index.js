@@ -17,8 +17,13 @@ filenames.forEach(filename => {
     .replace(/: PropTypes\.object\.isRequired/g, '?: Object')
     .replace(/PropTypes\.string\.isRequired/g, 'string')
     .replace(/: PropTypes\.string\.isRequired/g, '?: string')
+    .replace(/PropTypes\.bool\.isRequired/g, 'boolean')
+    .replace(/: PropTypes\.bool\.isRequired/g, '?: boolean')
+    .replace(/PropTypes\.number\.isRequired/g, 'number')
+    .replace(/: PropTypes\.number\.isRequired/g, '?: number')
     .replace(', { PropTypes }', '')
     .replace('const propTypes', 'type Props')
+    .replace(/.+propTypes \= propTypes;\n/, '')
 
   writeFileSync(
     filename,
