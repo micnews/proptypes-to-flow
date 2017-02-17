@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/micnews/proptypes-to-flow#readme",
   "dependencies": {
-    "glob": "^7.1.1"
+    "deglob": "^2.1.0"
   }
 }
