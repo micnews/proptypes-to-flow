@@ -1,6 +1,6 @@
 {
   "name": "proptypes-to-flow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert React proptypes to flow - not 100% but a starting point",
   "bin": "bin/cli.js",
   "scripts": {
