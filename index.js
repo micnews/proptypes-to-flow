@@ -17,15 +17,15 @@ deglob(process.argv.slice(2), (err, filenames) => {
 
     const changedFile = file
       .replace(/PropTypes\.object\.isRequired/g, 'Object')
-      .replace(/: PropTypes\.object\.isRequired/g, '?: Object')
+      .replace(/: PropTypes\.object/g, '?: Object')
       .replace(/PropTypes\.string\.isRequired/g, 'string')
-      .replace(/: PropTypes\.string\.isRequired/g, '?: string')
+      .replace(/: PropTypes\.string/g, '?: string')
       .replace(/PropTypes\.bool\.isRequired/g, 'boolean')
-      .replace(/: PropTypes\.bool\.isRequired/g, '?: boolean')
+      .replace(/: PropTypes\.bool/g, '?: boolean')
       .replace(/PropTypes\.number\.isRequired/g, 'number')
-      .replace(/: PropTypes\.number\.isRequired/g, '?: number')
+      .replace(/: PropTypes\.number/g, '?: number')
       .replace(', { PropTypes }', '')
-      .replace('const propTypes', 'type Props')
+      .replace('const propTypes', 'type PropsType')
       .replace(/.+propTypes \= propTypes;\n/, '')
 
     writeFileSync(
